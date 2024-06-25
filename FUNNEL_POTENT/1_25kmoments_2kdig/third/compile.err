@@ -1,0 +1,20 @@
+>> module openmpi/4.0.2 loaded
+>> module boost/1.73 loaded
+>> module gmp/6.2.0 loaded
+>> module gcc/8.4.0 loaded
+>> module gmp/6.2.0 loaded
+>> module mpfr/4.1.0 loaded
+>> module gcc/8.4.0 loaded
+In file included from /opt/hpcc/CPU/boost/1.73/include/boost/mpi/allocator.hpp:15,
+                 from /opt/hpcc/CPU/boost/1.73/include/boost/mpi.hpp:22,
+                 from third.cpp:8:
+/opt/hpcc/CPU/boost/1.73/include/boost/mpi/config.hpp:127: warning: "OMPI_BUILD_CXX_BINDINGS" redefined
+ #define OMPI_BUILD_CXX_BINDINGS 1
+ 
+In file included from /opt/hpcc/CPU/boost/1.73/include/boost/mpi/config.hpp:20,
+                 from /opt/hpcc/CPU/boost/1.73/include/boost/mpi/allocator.hpp:15,
+                 from /opt/hpcc/CPU/boost/1.73/include/boost/mpi.hpp:22,
+                 from third.cpp:8:
+/opt/hpcc/CPU/openmpi/4.0.2/include/mpi.h:172: note: this is the location of the previous definition
+ #define OMPI_BUILD_CXX_BINDINGS 0
+ 

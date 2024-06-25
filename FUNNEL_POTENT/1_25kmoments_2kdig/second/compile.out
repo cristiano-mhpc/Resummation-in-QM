@@ -1,0 +1,5 @@
+SLURM_JOBID=460424
+SLURM_JOB_NODELIST=saliksik-cpu-27
+SLURM_NNODES=1
+SLURMTMPDIR=
+working directory = /scratch3/chris.tica/FUNNEL/1_25k_moments_2kdig/second
