@@ -1,0 +1,6 @@
+SLURM_JOBID=345051
+SLURM_JOB_NODELIST=saliksik-cpu-23
+SLURM_NNODES=1
+SLURMTMPDIR=
+working directory = /scratch3/chris.tica/C++/Pade/Constants
+46minutes
