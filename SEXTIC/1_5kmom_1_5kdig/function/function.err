@@ -1,0 +1,6 @@
+>> module openmpi/4.0.2 loaded
+>> module mpc/1.1.0 loaded
+>> module boost/1.73 loaded
+>> module gmp/6.2.0 loaded
+>> module mpfr/4.0.2 loaded
+>> module gcc/8.4.0 loaded
