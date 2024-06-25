@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#SBATCH --partition=serial
+#SBATCH --qos=84c-1d_serial
+#SBATCH -o moments.out
+#SBATCH --error moments.err
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --job-name="moments"
+#SBATCH --mail-user=cdtica1@up.edu.ph
+#SBATCH --mem 20G
+
+
+echo "SLURM_JOBID="$SLURM_JOBID 
+echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST 
+echo "SLURM_NNODES"=$SLURM_NNODES 
+echo "SLURMTMPDIR="$SLURMTMPDIR 
+echo "working directory = "$SLURM_SUBMIT_DIR
+
+#Place commands to load environment modules here
+
+#Set stack size to unlimited
+ulimit -s unlimited
+
+#MAIN
+mpirun --oversubscribe -np 1 ./moments
+
