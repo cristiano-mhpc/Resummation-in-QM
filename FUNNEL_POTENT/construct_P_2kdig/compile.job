@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#SBATCH --partition=batch
+#SBATCH --qos=240c-1h_batch
+#SBATCH -o compile.out
+#SBATCH --error compile.err
+#SBATCH --nodes=1
+#SBATCH --nodelist=saliksik-cpu-27
+#SBATCH --ntasks=4
+#SBATCH --job-name="first_compile"
+#SBATCH --mail-user=cdtica1@up.edu.ph
+#SBATCH --mem 12G
+
+
+echo "SLURM_JOBID="$SLURM_JOBID 
+echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST 
+echo "SLURM_NNODES"=$SLURM_NNODES 
+echo "SLURMTMPDIR="$SLURMTMPDIR 
+echo "working directory = "$SLURM_SUBMIT_DIR
+
+#Place commands to load environment modules here
+module load openmpi/4.0.2
+module load boost/1.73
+module load gmp/6.2.0
+module load mpfr/4.1.0
+module load gcc/8.4.0
+
+
+#Set stack size to unlimited
+ulimit -s unlimited
+
+#MAIN
+
+rm auto
+
+mpicxx -o auto LU.cpp -O3 -lboost_mpi -lboost_serialization -lboost_thread -lboost_system -lboost_chrono -pthread -lmpfr -lgmp
+
