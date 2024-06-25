@@ -1,0 +1,6 @@
+SLURM_JOBID=313308
+SLURM_JOB_NODELIST=saliksik-cpu-08
+SLURM_NNODES=1
+SLURMTMPDIR=
+working directory = /scratch3/chris.tica/C++/10_mom_3kdig/second_parall
+0minutes

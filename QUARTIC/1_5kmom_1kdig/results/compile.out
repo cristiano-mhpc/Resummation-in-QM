@@ -1,0 +1,5 @@
+SLURM_JOBID=457600
+SLURM_JOB_NODELIST=saliksik-cpu-34
+SLURM_NNODES=1
+SLURMTMPDIR=
+working directory = /scratch3/chris.tica/C++/1_5k_mom_1kdig/results
