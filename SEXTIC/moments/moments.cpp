@@ -43,7 +43,7 @@
 #include <time.h>
 
 
-#define digits 3000
+#define digits 300
 using namespace boost::archive;
 using namespace boost::serialization;
 using namespace boost::multiprecision;
@@ -52,7 +52,7 @@ using namespace std::chrono;
 
 //serialization code for mpfr_float
 using realtype = number<mpfr_float_backend<digits, allocate_stack>>;
-#define MPFR_BUFFER_SIZE 3010
+#define MPFR_BUFFER_SIZE 310
 
     namespace boost {
         namespace serialization {
@@ -150,7 +150,7 @@ int main()
 
 
     //Declare some variables
-    const int d = 5000; // code below works for even d;
+    const int d = 500; // code below works for even d;
     matrix <realtype> a(d + 1, 3*(d/2) + 1);
     matrix <realtype> mat( 3*(d/2) + 1, 3*(d/2) + 1 );// zero index included
 
