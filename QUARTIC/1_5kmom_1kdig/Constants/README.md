@@ -7,7 +7,7 @@ for the first $d+1$ expansion coefficients $c_m$:
 ```math
 \mu_n =\sum_{m=0}^{d} c_m\, P(n,m)
 ``` 
-where the matrix \(P(n,m)\) is defined as
+where the matrix $P(n,m)$ is defined as
 
 ```math
 P(n,m) = m!\,2^{\,n-\nu+1}\sum_{k=0}^{m}\frac{(-2)^k\,\Gamma(n + k - \nu + 1)}{(k!)^2 (m - k)!}.
@@ -16,9 +16,7 @@ P(n,m) = m!\,2^{\,n-\nu+1}\sum_{k=0}^{m}\frac{(-2)^k\,\Gamma(n + k - \nu + 1)}{(
 In the case of the **quartic anharmonic oscillator**, the coefficients are related by
 
 $$
-b_{k+1} = (-1)^k \mu_k
-       = (-1)^k \int_{0}^{\infty} x^k \rho(x)\,dx,
-\tag{3}
+b_{k+1} = (-1)^k \mu_k=(-1)^k \int_{0}^{\infty} x^k \rho(x)\,dx,
 $$
 
 for $k = 0, 1, \dots$, where $b_{k+1}$ are the coefficients of the  
