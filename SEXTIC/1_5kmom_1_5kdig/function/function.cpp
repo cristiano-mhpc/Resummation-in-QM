@@ -149,7 +149,7 @@ int main()
     //-------------read-in the constants------------------------------------
     std::ifstream infile;
     std::string st1;
-    infile.open( "/scratch3/chris.tica/SEXTIC/1_5k_mom_1_5kdig/Constants/Constant.txt" );
+    infile.open( "../Constants/Constant.txt" );
     for ( i=0; i < constants.size(); ++i )
     {
         std::getline(infile, st1);
@@ -163,7 +163,7 @@ int main()
     vector<complextype> fifthter(betas);
 
     std::ofstream outfile1;
-    outfile1.open("/scratch3/chris.tica/SEXTIC/1_5k_mom_1_5kdig/results/FIFTH.txt",std::ios_base::out);
+    outfile1.open("../results/FIFTH.txt",std::ios_base::out);
     outfile1.precision(digits);
 
     for ( i = 0; i < betas ; ++i )
