@@ -42,10 +42,10 @@ $$g(x) =e^{-x/2}\sum_{m=0}^{d} c_m m!\sum_{k=0}^{m}\frac{(-x)^k}{(k!)^2 (m - k)!
 
 ## Inputs and Outputs
 
-* The partial sums in equation (2) for various \(\beta\) values are read from  
+* The partial sums in equation (2) for various $\beta$ values are read from  
   **`FIRST.txt`**, **`SECOND.txt`**, **`THIRD.txt`**, **`FOURTH.txt`**.
 * The third term in equation (1) is read from **`FIFTH.txt`**.
-* The final computed ground-state energy \(E_0(\beta)\) is written to **`disectres.txt`**.
+* The final computed ground-state energy $E_0(\beta)$ is written to **`disectres.txt`**.
 
 ---
 
