@@ -1,5 +1,0 @@
-SLURM_JOBID=458383
-SLURM_JOB_NODELIST=saliksik-cpu-30
-SLURM_NNODES=1
-SLURMTMPDIR=
-working directory = /scratch3/chris.tica/SEXTIC/1_5k_mom_1_5kdig/third_parall

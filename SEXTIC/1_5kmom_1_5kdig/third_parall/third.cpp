@@ -108,7 +108,6 @@ vector<realtype> factor(d+1);
 vector<realtype> factor1(d+1);
 vector<realtype> factor2(d+1);
 
-
 int adder(int number) //used later to determine if LO == 0 or otherwise.
 {
     return (number > 0 ? 1 : 0);
@@ -157,7 +156,7 @@ int main()
     vector<realtype> constants(d+1);
     std::ifstream infile;
     std::string st1;
-    infile.open( "/scratch3/chris.tica/SEXTIC/1_5k_mom_1_5kdig/Constants/Constant.txt" );
+    infile.open( "../Constants/Constant.txt" );
     for (i=0; i < constants.size(); ++i)
     {
         std::getline(infile, st1);
@@ -223,7 +222,7 @@ int main()
         }
 
         std::ofstream outfile1;
-        outfile1.open( "/scratch3/chris.tica/SEXTIC/1_5k_mom_1_5kdig/results/THIRD.txt",std::ios_base::out );
+        outfile1.open( "../results/THIRD.txt",std::ios_base::out );
         outfile1.precision(digits);
 
         for (i = 0; i < betas ; ++i )
