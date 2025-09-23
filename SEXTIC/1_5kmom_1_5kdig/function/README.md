@@ -28,7 +28,7 @@ The program reads the required $d + 1$ coefficients $c_m$ from  **`Constant.txt`
 | File / Folder     | Purpose                                                                 |
 |-------------------|-------------------------------------------------------------------------|
 | `function.cpp`    | Main C++ source computing the third term in equation (3.50).            |
-| `Constant.txt`    | Input data: the d + 1 coefficients $c_m4.                             |
+| `Constant.txt`    | Input data: the d + 1 coefficients $c_m$.                             |
 | `FIFTH.txt`       | Output file containing computed values of $E^{(3)}(\beta)$.           |
 | `CMakeLists.txt`  | Modern build configuration using CMake (MPI + Boost + MPFR + MPC).      |
 | `compile.job`     | SLURM script to build the project on an HPC cluster.                    |
