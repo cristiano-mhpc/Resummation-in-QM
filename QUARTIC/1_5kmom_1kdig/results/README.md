@@ -1,10 +1,8 @@
 # Ground-State Energy of the Quartic Anharmonic Oscillator  
-(MPI + Boost.MPFR/GMP)
 
 ## What this code is about
 
-The C++ code **`result.cpp`** computes the ground–state energy  
-$E_0(\beta)$ of the **quartic anharmonic oscillator**:
+The C++ code **`result.cpp`** computes the ground–state energy $E_0(\beta)$ of the **quartic anharmonic oscillator**:
 
 $$E(\beta) = -\frac{1}{2}\left[1 -\sum_{k=0}^{\infty} (-1)^k \mu^{-(k+1)} \beta^k-\frac{\pi g(-1/\beta) \beta^{2/3}}{\sin(2\pi/3)}\right].$$
 
@@ -24,7 +22,7 @@ $$B_k =\sum_{m=k+1}^{d} c_m m!\sum_{l=0}^{k}\frac{(-1)^l}{(l!)^2 (m - l)!}\mathr
 
 $$C_k =\sum_{m=k+1}^{d} c_m m!\sum_{l=k+1}^{m}\frac{(-1)^l \Gamma(l - k - \nu) 2^{l-k-\nu}}{(l!)^2 (m - l)!},$$
 
-$$D_k =\sum_{m=0}^{d} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m - l)!} \mathrm{FP}\int_{0}^{\infty} \freac{e^{-x/2}}{ x^{k+\nu+1-l}}dx.$$
+$$D_k =\sum_{m=0}^{d} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m - l)!} \mathrm{FP}\int_{0}^{\infty} \frac{e^{-x/2}}{ x^{k+\nu+1-l}}dx.$$
 
 The finite-part integrals are
 
