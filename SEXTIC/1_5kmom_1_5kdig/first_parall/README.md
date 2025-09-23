@@ -1,28 +1,20 @@
-# Computation of Expansion Coefficients $c_m$
+# First Term Computation (MPI + Boost.MPFR)
 
 ## What this code is about
 
-The C++ file **`LU.cpp`** solves the system of $d+1$ linear equations  
-for the first $d+1$ expansion coefficients $c_m$:
+The C++ code **`first.cpp`** computes the **first term** in equation (3.10):
 
-$$\mu_n =\sum_{m=0}^{d} c_m P(n,m)$$
+$$\sum_{k=0}^{\infty}(-1)^k \frac{\mu^{-(k+1)}}{\beta^k}=\sum_{k=0}^{\floor{\frac{d}{2}} - 1}\frac{(-1)^k }{\beta^k} (A_k + B_k + C_k)+\sum_{k=\floor{\frac{d}{2}}}^{\infty}\frac{(-1)^k} {\beta^k} D_k$$
 
-where the matrix $P(n,m)$ is defined as
+where
 
-$$P(n,m) = m!2^{n-\nu+1}\sum_{k=0}^{m}\frac{(-2)^k\Gamma(n + k - \nu + 1)}{(k!)^2 (m - k)!}$$
+$$A_k =\sum_{m=0}^{k}c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m - l)!}\left(\mathrm{FP}\int_{0}^{\infty} \frac{e^{-x/2}} {x^{k+\nu+1-l}} dx\right),$$
 
-In the case of the **quartic anharmonic oscillator**, the coefficients are related by
+and
 
+$$\mathrm{FP}\int_{0}^{\infty} \frac{e^{-x/2}} {x^{k+\nu+1-l} } dx=\frac{(-1)^{k-l+1}\left(\frac{1}{2}\right)^{k-l+1+\nu}\pi}{\Gamma(k - l + 1 + \nu)\sin(\pi \nu)}.$$
 
-$$b_{k+1} = (-1)^k \mu_k = (-1)^k \int_{0}^{\infty} x^k \rho(x)\,dx,$$
-
-for $k = 0, 1, \dots$, where $b_{k+1}$ are the coefficients of the  
-weak-coupling perturbation expansion for the ground-state energy
-
-$$E^{(2)}(\beta) = 1 + \sum_{k=1}^{\infty} b_k \beta^k.$$
-
-The program outputs the coefficients $c_m$ and related quantities needed  
-in the weak-coupling expansion.
+The code reads the required $d + 1$ numbers $c_m$ from **`Constants.txt`** and writes the computed values of the first-term series to **`FIRST.txt`** for a range of $\beta$ values.
 
 ---
 
@@ -30,13 +22,18 @@ in the weak-coupling expansion.
 
 | File / Folder     | Purpose                                                                 |
 |-------------------|-------------------------------------------------------------------------|
-| `LU.cpp`          | C++ source code that solves the linear system and computes $c_m$.     |
+| `first.cpp`       | Main C++ source computing the first term in equation (3.10).            |
+| `Constants.txt`   | Input data: the $d + 1$ coefficients $c_m$.                              |
+| `FIRST.txt`       | Output file containing the computed first-term series values.           |
 | `CMakeLists.txt`  | Modern CMake build configuration (MPI + Boost + MPFR + GMP).            |
 | `compile.job`     | SLURM script to compile the program on an HPC cluster.                  |
-| `together.job`    | SLURM script to run the program on an HPC cluster.                      |
+| `together.job`    | SLURM script to run the compiled executable on an HPC cluster.          |
+| `mpfr.sh`         | Legacy shell script to compile and run locally on Ubuntu 22.04.         |
 
 ---
 
 ## Building and Running
-To build and run the program, execute the shell script `run.sh`. 
 
+### 1. Local Ubuntu build with CMake
+
+To build and run the program, run the shell script `run.sh`. 
