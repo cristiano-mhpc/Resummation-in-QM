@@ -5,7 +5,7 @@
 The C++ file **`LU.cpp`** solves the system of $d+1$ linear equations  
 for the first $d+1$ expansion coefficients $c_m$:
 ```math
-\mu_n =\sum_{m=0}^{d} c_m\, P(n,m)
+\mu_{2n} =\sum_{m=0}^{d} c_m\, P(2n,m)
 ``` 
 where the matrix $P(n,m)$ is defined as
 
@@ -13,16 +13,16 @@ where the matrix $P(n,m)$ is defined as
 P(n,m) = m!\,2^{\,n-\nu+1}\sum_{k=0}^{m}\frac{(-2)^k\,\Gamma(n + k - \nu + 1)}{(k!)^2 (m - k)!}.
 ```
 
-In the case of the **quartic anharmonic oscillator**, the coefficients are related by
+In the case of the **sextic anharmonic oscillator**, the coefficients are related by
 
 $$
-b_{k+1} = (-1)^k \mu_k=(-1)^k \int_{0}^{\infty} x^k \rho(x)\,dx,
+b^{k+1} = (-1)^k \mu_{2k}=(-1)^k \int_{0}^{\infty} x^2k \rho(x)\,dx,
 $$
 
 for $k = 0, 1, \dots$, where $b_{k+1}$ are the coefficients of the  
 weak-coupling perturbation expansion for the ground-state energy
 
-$$E^{(2)}(\beta) = 1 + \sum_{k=1}^{\infty} b_k \beta^k.$$
+$$E^{(3)}(\beta) = 1 + \sum_{k=1}^{\infty} b_k \beta^k.$$
 
 The program outputs the coefficients $c_m$ and related quantities needed  
 in the weak-coupling expansion.
