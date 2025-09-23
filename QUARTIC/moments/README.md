@@ -47,7 +47,6 @@ $$\begin{aligned}
 \langle n|x^4|n-2\rangle &= \frac{1}{2}(2n-1)\sqrt{n(n-1)}, \\
 \langle n|x^4|n-4\rangle &= \frac{1}{4}\sqrt{n(n-1)(n-2)(n-3)}.
 \end{aligned}
-\tag{10–13}
 $$
 
 All computed coefficients $b_k$ are written to **`moments.txt`**.
