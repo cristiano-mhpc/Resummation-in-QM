@@ -1,5 +1,3 @@
-$$\newcommand{\bbint}[2]{\;\backslash\!\!\!\!\backslash\!\!\!\!\!\int_{#1}^{#2}}$$ 
-
 # Third Term Computation (MPI + Boost.MPFR)
 
 ## What this code is about
@@ -7,9 +5,9 @@ $$\newcommand{\bbint}[2]{\;\backslash\!\!\!\!\backslash\!\!\!\!\!\int_{#1}^{#2}}
 The C++ program **`third.cpp`** computes the **third term** in equation (3.55):
 
 $$
-\sum_{k=0}^{\infty} (-1)^k \mu^{-(2k+2)} \beta^k =
-\sum_{k=0}^{\lfloor d/2\rfloor - 1} (-1)^k \beta^k \bigl(A_{2k} + B_{2k} + C_{2k}\bigr) +
-\sum_{k=\lfloor d/2\rfloor}^{\infty} (-1)^k \beta^k D_{2k},
+\sum_{k=0}^{\infty} \frac{(-1)^k \mu^{-(2k+2)}}{ \beta^k} =
+\sum_{k=0}^{\lfloor d/2\rfloor - 1} \frac{(-1)^k}{ \beta^k} \bigl(A_{2k} + B_{2k} + C_{2k}\bigr) +
+\sum_{k=\lfloor d/2\rfloor}^{\infty}\frac{ (-1)^k}{ \beta^k} D_{2k},
 $$ 
 
 where $\lfloor x \rfloor$ is the floor function and the $C_k$ term is
@@ -18,7 +16,7 @@ $$
 C_k =
 \sum_{m=k+1}^{d} c_m m!
 \sum_{l=k+1}^{m}
-\frac{(-1)^l \Gamma(l - k - \nu) 2^{\,l-k-\nu}}{(l!)^2 (m - l)!}.
+\frac{(-1)^l \Gamma(l - k - \nu) 2^{l-k-\nu}}{(l!)^2 (m - l)!}.
 $$ 
 
 The program reads the required $d + 1$ constants $c_m$ from  
