@@ -28,7 +28,8 @@ The code requires the $d + 1$ numbers $c_m$ as inputs,  read from the file **`Co
 | `CMakeLists.txt`  | Modern build configuration (MPI + Boost + MPFR + GMP).                  |
 | `compile.job`     | SLURM script to compile the code on an HPC cluster.                     |
 | `together.job`    | SLURM script to run the executable on an HPC cluster.                   |
-| `mpfr.sh`         | Legacy local shell script to compile and run on Ubuntu 22.04.           |
+| `run.sh`         | shell script to compile and run          |
+
 
 ---
 
