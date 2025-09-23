@@ -23,5 +23,5 @@ echo "working directory = "$SLURM_SUBMIT_DIR
 ulimit -s unlimited
 
 #MAIN
-mpirun --oversubscribe -np 1 ./moments
+mpirun -np 1 ./moments
 
