@@ -1,0 +1,85 @@
+# CMake build artifacts
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+Testing/
+CTestTestfile.cmake
+
+# Compiled object files and libraries
+*.o
+*.lo
+*.la
+*.al
+*.obj
+*.so
+*.so.*
+*.dll
+*.dylib
+*.a
+*.lib
+*.out
+*.err
+*.exe
+
+# Project executables (from your sources)
+auto
+first
+second
+third
+fourth
+function
+moments
+constant
+result
+LU
+
+# Nsight/NVIDIA profiling data
+*.nsys-rep
+*.qdrep
+*.sqlite
+*.nsys-ui
+*.nvvp
+
+# Log and runtime files
+*.log
+*.txt~
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swl
+*.swn
+
+# SLURM output
+slurm-*.out
+slurm-*.err
+LOG_*.out
+LOG_*.err
+
+# Editor and OS metadata
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+Thumbs.db
+ehthumbs.db
+Icon?
+.vscode/
+.idea/
+*.code-workspace
+
+# Python cache (if you write helper scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local user-specific environment/config
+.env
+*.local
+*.user
+*.cache
+*.history
+*.directory
+

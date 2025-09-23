@@ -22,10 +22,7 @@ $$
 for $k = 0, 1, \dots$, where $b_{k+1}$ are the coefficients of the  
 weak-coupling perturbation expansion for the ground-state energy
 
-$$
-E^{(2)}(\beta) = 1 + \sum_{k=1}^{\infty} b_k \beta^k.
-\tag{4}
-$$
+$$E^{(2)}(\beta) = 1 + \sum_{k=1}^{\infty} b_k \beta^k.$$
 
 The program outputs the coefficients $c_m$ and related quantities needed  
 in the weak-coupling expansion.
