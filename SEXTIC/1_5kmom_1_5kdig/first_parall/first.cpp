@@ -153,7 +153,7 @@ int main()
 
     std::string st2;
     std::ifstream infile;
-    infile.open("/scratch3/chris.tica/SEXTIC/1_5k_mom_1_5kdig/Constants/Constant.txt");
+    infile.open("../Constants/Constant.txt");
     for (i=0; i < constants.size(); ++i)
     {
         std::getline(infile, st2);
@@ -215,7 +215,7 @@ int main()
         }
 
         std::ofstream outfile1;
-        outfile1.open("/scratch3/chris.tica/SEXTIC/1_5k_mom_1_5kdig/results/FIRST.txt", std::ios_base::out);
+        outfile1.open("../results/FIRST.txt", std::ios_base::out);
         outfile1.precision(digits);
         for (i = 0; i < betas ; ++i )
         {
