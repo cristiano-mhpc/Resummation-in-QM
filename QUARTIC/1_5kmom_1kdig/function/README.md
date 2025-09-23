@@ -4,7 +4,7 @@
 
 The C++ code **`function.cpp`** computes the **second term on the right-hand side** of equation (2.8):
 
-$$\beta\int_{0}^{\infty}\frac{x^{-\nu} g(x)}{1 + \beta x}\, dx =\sum_{k=0}^{\infty} (-1)^k \mu^{-(k+1)} \beta^k+\frac{\pi\, g(-1/\beta)\, \beta^{\nu}}{\sin(\pi \nu)}.$$
+$$\beta\int_{0}^{\infty}\frac{x^{-\nu} g(x)}{1 + \beta x} dx =\sum_{k=0}^{\infty} (-1)^k \mu^{-(k+1)} \beta^k+\frac{\pi\, g(-1/\beta) \beta^{\nu}}{\sin(\pi \nu)},$$
 
 where
 
