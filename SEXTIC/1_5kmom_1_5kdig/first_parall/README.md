@@ -4,7 +4,7 @@
 
 The C++ code **`first.cpp`** computes the **first term** in equation (3.10):
 
-$$\sum_{k=0}^{\infty}(-1)^k \frac{\mu^{-(k+1)}}{\beta^k}=\sum_{k=0}^{\lfloor{\frac{d}{2}} - 1}\frac{(-1)^k }{\beta^k} (A_k + B_k + C_k)+\sum_{k=\lfloor{\frac{d}{2}}}^{\infty}\frac{(-1)^k} {\beta^k} D_k$$
+$$\sum_{k=0}^{\infty}(-1)^k \frac{\mu^{-(k+1)}}{\beta^k}=\sum_{k=0}^{\lfloor{\frac{d}{2}}\rfloor - 1}\frac{(-1)^k }{\beta^k} (A_k + B_k + C_k)+\sum_{k=\lfloor{\frac{d}{2}\rfloor}}^{\infty}\frac{(-1)^k} {\beta^k} D_k$$
 
 where
 
