@@ -5,8 +5,7 @@
 #SBATCH -o constant.out
 #SBATCH --error constant.err
 #SBATCH --nodes=1
-#SBATCH --nodelist=saliksik-cpu-27
-#SBATCH --ntasks=1
+#SBATCH --ntasks=2
 #SBATCH --job-name="constant"
 #SBATCH --mail-user=cdtica1@up.edu.ph
 #SBATCH --mem 50G
@@ -24,6 +23,5 @@ echo "working directory = "$SLURM_SUBMIT_DIR
 ulimit -s unlimited
 
 #MAIN
-
-./constant
+mpirun --oversubscribe -np 2 ./auto
 

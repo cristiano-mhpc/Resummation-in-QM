@@ -5,11 +5,10 @@
 #SBATCH -o compile.out
 #SBATCH --error compile.err
 #SBATCH --nodes=1
-#SBATCH --nodelist=saliksik-cpu-27
 #SBATCH --ntasks=1
-#SBATCH --job-name="const_compile"
+#SBATCH --job-name="constant_compile"
 #SBATCH --mail-user=cdtica1@up.edu.ph
-#SBATCH --mem 12G
+#SBATCH --mem 10G
 
 
 echo "SLURM_JOBID="$SLURM_JOBID 
@@ -22,16 +21,15 @@ echo "working directory = "$SLURM_SUBMIT_DIR
 module load gmp/6.2.0
 module load mpfr/4.1.0
 module load gcc/8.4.0
+module load boost/1.73 
+module load openmpi/4.0.2
 
-
-#Set stack size to unlimited
+#Set stack size to unlimitedi
 ulimit -s unlimited
 
 #MAIN
 
-rm constant constant.o
+rm auto
 
-g++ -c constant.cpp
-
-g++ constant.o -o constant -O3 -lmpfr -lgmp
+mpicxx -o auto LU.cpp -O3 -lboost_mpi -lboost_serialization -lboost_thread -lboost_system -lboost_chrono -pthread -lmpfr -lgmp
 
