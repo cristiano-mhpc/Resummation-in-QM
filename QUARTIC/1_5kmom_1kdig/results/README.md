@@ -17,9 +17,10 @@ $$\sum_{k=0}^{\infty} (-1)^k \mu^{-(k+1)} \beta^k=\sum_{k=0}^{d} (-1)^k \beta^k 
 
 with
 $$A_k =\sum_{m=0}^{k} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m - l)!}\int_{0}^{\infty} e^{-x/2} x^{k+\nu+1-l}dx,$$
+
 $$B_k =\sum_{m=k+1}^{d} c_m m!\sum_{l=0}^{k}\frac{(-1)^l}{(l!)^2 (m - l)!}\int_{0}^{\infty} e^{-x/2} x^{k+\nu+1-l}dx,$$
-$$
-C_k =\sum_{m=k+1}^{d} c_m m!\sum_{l=k+1}^{m}\frac{(-1)^l \Gamma(l - k - \nu) 2^{l-k-\nu}}{(l!)^2 (m - l)!},$$
+
+$$C_k =\sum_{m=k+1}^{d} c_m m!\sum_{l=k+1}^{m}\frac{(-1)^l \Gamma(l - k - \nu) 2^{l-k-\nu}}{(l!)^2 (m - l)!},$$
 
 $$D_k =\sum_{m=0}^{d} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m - l)!}\int_{0}^{\infty} e^{-x/2} x^{k+\nu+1-l}dx.$$
 
