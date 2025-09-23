@@ -1,5 +1,0 @@
-SLURM_JOBID=457598
-SLURM_JOB_NODELIST=saliksik-cpu-34
-SLURM_NNODES=1
-SLURMTMPDIR=
-working directory = /scratch3/chris.tica/C++/1_5k_mom_1kdig/fourth_parall
