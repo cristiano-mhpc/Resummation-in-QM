@@ -4,14 +4,10 @@
 
 The C++ file **`LU.cpp`** solves the system of $d+1$ linear equations  
 for the first $d+1$ expansion coefficients $c_m$:
-
 $$\mu_n =\sum_{m=0}^{d} c_m P(n,m)\tag{1}$$
-
 where the matrix $P(n,m)$ is defined as
 
-
 $$P(n,m) = m!2^{n-\nu+1}\sum_{k=0}^{m}\frac{(-2)^k\Gamma(n + k - \nu + 1)}{(k!)^2 (m - k)!}$$
-
 
 In the case of the **quartic anharmonic oscillator**, the coefficients are related by
 
