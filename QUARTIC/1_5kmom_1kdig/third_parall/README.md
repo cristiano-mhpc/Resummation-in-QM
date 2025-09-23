@@ -4,24 +4,11 @@
 
 The C++ code **`third.cpp`** computes the **third term** in equation (3.10):
 
-$$
-\sum_{k=0}^{\infty} (-1)^k \mu^{-(k+1)} \beta^k=
-\sum_{k=0}^{d} (-1)^k \beta^k (A_k + B_k + C_k)
-+
-\sum_{k=d+1}^{\infty} (-1)^k \beta^k D_k,
-\tag{1}
-$$
+$$\sum_{k=0}^{\infty} (-1)^k \mu^{-(k+1)} \beta^k=\sum_{k=0}^{d} (-1)^k \beta^k (A_k + B_k + C_k)+\sum_{k=d+1}^{\infty} (-1)^k \beta^k D_k,$$
 
 where
 
-$$
-C_k =
-\sum_{m=k+1}^{d} c_m m!
-\sum_{l=k+1}^{m}
-\frac{(-1)^l \Gamma(l - k - \nu) 2^{\,l - k - \nu}}
-     {(l!)^2 (m - l)!}.
-\tag{2}
-$$
+$$C_k =\sum_{m=k+1}^{d} c_m m!\sum_{l=k+1}^{m}\frac{(-1)^l \Gamma(l - k - \nu) 2^{\,l - k - \nu}}{(l!)^2 (m - l)!}.$$
 
 The code requires the $d + 1$ numbers $c_m$ as inputs, read from  
 **`Constants.txt`**, and writes the computed values for various $\beta$ to  
@@ -39,7 +26,7 @@ The code requires the $d + 1$ numbers $c_m$ as inputs, read from
 | `CMakeLists.txt`  | Modern CMake build configuration (MPI + Boost + MPFR + GMP).            |
 | `compile.job`     | SLURM script to compile the program on an HPC cluster.                  |
 | `together.job`    | SLURM script to run the program on an HPC cluster.                      |
-| `mpfr.sh`         | Legacy shell script to compile and run on a local Ubuntu 22.04 machine. |
+| `run.sh`         | shell script to compile and run on a local Ubuntu 22.04 machine. |
 
 ---
 
