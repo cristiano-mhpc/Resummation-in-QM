@@ -8,7 +8,7 @@ $$E^{(3)}(\beta) = 1 + \sum_{k=0}^{\infty} (-1)^k \beta^k \mu^{-(2k+2)} + \Delta
 
 where the correction term $\Delta(\beta)$ is
 
-$$\Delta(\beta) =\frac{\pi \beta^{(1+\nu)/2}}{\sin (\pi\nu)}\Bigl[\cos\!\left(\frac{\pi\nu}{2}\right)\mathrm{Im} g\!\left(\frac{i}{\sqrt{\beta}}\right)+ \sin\!\left(\frac{\pi\nu}{2}\right)\mathrm{Re} g\!\left(\frac{i}{\sqrt{\beta}}\right)\Bigr],$$ 
+$$\Delta(\beta) =\frac{\pi \beta^{(1+\nu)/2}}{\sin (\pi\nu)}\Bigl[\cos\left(\frac{\pi\nu}{2}\right)\mathrm{Im} g\left(\frac{i}{\sqrt{\beta}}\right)+ \sin\left(\frac{\pi\nu}{2}\right)\mathrm{Re} g\left(\frac{i}{\sqrt{\beta}}\right)\Bigr],$$ 
 
 with $\nu = -\tfrac{1}{2}$ and
 
