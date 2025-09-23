@@ -147,7 +147,7 @@ int main()
 
     std::string st1;
     std::ifstream infile;
-    infile.open("/scratch3/chris.tica/C++/1_5k_mom_1kdig/Constants/Constant.txt");
+    infile.open("../Constants/Constant.txt");
     for ( i=0; i < constants.size(); ++i )
     {
         std::getline(infile, st1 );
@@ -209,7 +209,7 @@ int main()
         }
 
         std::ofstream outfile1;
-        outfile1.open("/scratch3/chris.tica/C++/1_5k_mom_1kdig/results/FIRST.txt", std::ios_base::out);
+        outfile1.open("../results/FIRST.txt", std::ios_base::out);
         outfile1.precision(digits);
         for (i = 0; i < omegas ; ++i )
         {
