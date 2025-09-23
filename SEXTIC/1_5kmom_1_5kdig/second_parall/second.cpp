@@ -158,7 +158,7 @@ int main()
     //-------------read-in the constants------------------------------------
     std::string st1;
     std::ifstream infile;
-    infile.open("/scratch3/chris.tica/SEXTIC/1_5k_mom_1_5kdig/Constants/Constant.txt");
+    infile.open("../Constants/Constant.txt");
 
     for (i=0; i < constants.size(); ++i)
     {
@@ -221,7 +221,7 @@ int main()
         }
 
         std::ofstream outfile1;
-        outfile1.open("/scratch3/chris.tica/SEXTIC/1_5k_mom_1_5kdig/results/SECOND.txt",std::ios_base::out);
+        outfile1.open("../results/SECOND.txt",std::ios_base::out);
         outfile1.precision(digits);
 
         for ( i = 0; i < betas; ++i )

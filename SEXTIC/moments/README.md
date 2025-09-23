@@ -29,13 +29,13 @@ a^{(0)}_{0,m} = 0, \qquad
 a^{(1)}_{0,m} = -\frac{\langle m|x^6|0\rangle}{2m}
 $$
 
+
 $$
 a^{(r)}_{0,m} = -\frac{1}{2m}
 \left[
-\sum_{k=1}^\infty \langle m|x^6|k\rangle a^{(r-1)}_{0,k}
- - \sum_{s=1}^{r-1} a^{(s)}_{0,m}\, b_{r-s}
+\sum_{k=1}^\infty \langle m|x^6|k\rangle a^{(r-1)}_{0,k} - \sum_{s=1}^{r-1} a^{(s)}_{0,m}\, b_{r-s}
 \right], \quad r \ge 2, \; m \neq 0
-$$ 
+$$
 
 Only a finite set of matrix elements $\langle n|x^6|n+\ell\rangle$ are non-zero:
 

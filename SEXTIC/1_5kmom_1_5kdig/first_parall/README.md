@@ -31,6 +31,7 @@ $$
 The program requires $d + 1$ constants $c_m$ as input, read from  
 `Constant.txt`, and outputs the computed values of the series for
 $\beta \in \{10^{-5}, \dots, 10^{23}, 0.2, 4\}$ to `FIRST.txt`.
+
 ---
 
 ## Repository Layout
