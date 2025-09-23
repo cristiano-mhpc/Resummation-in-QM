@@ -12,7 +12,7 @@ $$B_k =\sum_{m=k+1}^{d} c_m m!\sum_{l=0}^{k}\frac{(-1)^l}{(l!)^2 (m - l)!}\left(
 
 and the integral is
 
-$$\mathrm{FP}\int_{0}^{\infty} e^{-x/2} x^{k+\nu+1-l} dx=\frac{(-1)^{k-l+1}\left(\frac{1}{2}\right)^{k-l+1+\nu}\pi}{\Gamma(k - l + 1 + \nu)\,\sin(\pi\nu)}.$$
+$$\mathrm{FP}\int_{0}^{\infty} e^{-x/2} x^{k+\nu+1-l} dx=\frac{(-1)^{k-l+1}\left(\frac{1}{2}\right)^{k-l+1+\nu}\pi}{\Gamma(k - l + 1 + \nu)\sin(\pi\nu)}.$$
 
 The code requires the $d + 1$ numbers $c_m$ as inputs,  read from the file **`Constants.txt`**.  It outputs the computed values for various $\beta$ to **`SECOND.txt`**.
 
