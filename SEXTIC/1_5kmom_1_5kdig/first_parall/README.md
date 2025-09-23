@@ -1,36 +1,38 @@
-$$\newcommand{\bbint}[2]{\;\backslash\!\!\!\!\backslash\!\!\!\!\!\int_{#1}^{#2}}$$ 
-
-# First Term Computation
+# Computation of Expansion Coefficients $c_m$
 
 ## What this code is about
 
+The C++ file **`LU.cpp`** solves the system of $d+1$ linear equations  
+for the first $d+1$ expansion coefficients $c_m$:
 
-The C++ program **`first.cpp`** computes the first term in equation (3.55):
+\[
+\mu_n =\sum_{m=0}^{d} c_m P(n,m)\tag{1}
+\]
 
-$$
-\sum_{k=0}^{\infty} (-1)^k \mu^{-(2k+2)} \beta^k =
-\sum_{k=0}^{\lfloor d/2\rfloor-1} (-1)^k \beta^k (A_{2k} + B_{2k} + C_{2k}) +
-\sum_{k=\lfloor d/2\rfloor}^{\infty} (-1)^k \beta^k D_{2k},
-$$
+where the matrix $P(n,m)$ is defined as
 
-where $\lfloor x \rfloor$ is the floor function and each $A_k$ is given by
+\[
+P(n,m) = m!2^{n-\nu+1}\sum_{k=0}^{m}\frac{(-2)^k\Gamma(n + k - \nu + 1)}{(k!)^2 (m - k)!}.\tag{2}
+\]
 
-$$
-A_k = \sum_{m=0}^{k} c_m m!
-      \sum_{l=0}^{m} \frac{(-1)^l}{(l!)^2 (m-l)!}
-      \int_{0}^{\infty} \frac{e^{-x/2}}{ x^{k + \nu + 1 - l}}\, dx,
-$$ 
-and
-$$
-\bbint{0}{\infty} \frac{e^{-x/2}} {x^{k+\nu+1-l}}\, dx
-= \frac{(-1)^{k-l+1}\left(\frac{1}{2}\right)^{k-l+1+\nu}
-  \pi}{\Gamma(k - l + 1 + \nu)\,\sin(\pi\nu)}.
-$$ 
+In the case of the **quartic anharmonic oscillator**, the coefficients are related by
 
+\[
+b_{k+1} = (-1)^k \mu_k
+       = (-1)^k \int_{0}^{\infty} x^k \rho(x)\,dx,
+\tag{3}
+\]
 
-The program requires $d + 1$ constants $c_m$ as input, read from  
-`Constant.txt`, and outputs the computed values of the series for
-$\beta \in \{10^{-5}, \dots, 10^{23}, 0.2, 4\}$ to `FIRST.txt`.
+for $k = 0, 1, \dots$, where $b_{k+1}$ are the coefficients of the  
+weak-coupling perturbation expansion for the ground-state energy
+
+\[
+E^{(2)}(\beta) = 1 + \sum_{k=1}^{\infty} b_k \beta^k.
+\tag{4}
+\]
+
+The program outputs the coefficients $c_m$ and related quantities needed  
+in the weak-coupling expansion.
 
 ---
 
@@ -38,18 +40,13 @@ $\beta \in \{10^{-5}, \dots, 10^{23}, 0.2, 4\}$ to `FIRST.txt`.
 
 | File / Folder     | Purpose                                                                 |
 |-------------------|-------------------------------------------------------------------------|
-| `first.cpp`       | Main C++ source computing the series in equation (3.55).               |
-| `Constant.txt`    | Input data: the d + 1 coefficients $c_m$.                             |
-| `FIRST.txt`       | Output file with computed values of the expansion.                      |
-| `CMakeLists.txt`  | Modern build configuration using CMake (MPI + Boost + MPFR).            |
-| `run.sh`          | Portable build/run script: configure, build, and launch locally or on SLURM. |
-| `compile.job`     | SLURM script to build the project on an HPC cluster.                    |
-| `together.job`    | SLURM script to run the compiled executable on an HPC cluster.          |
+| `LU.cpp`          | C++ source code that solves the linear system and computes $c_m$.     |
+| `CMakeLists.txt`  | Modern CMake build configuration (MPI + Boost + MPFR + GMP).            |
+| `compile.job`     | SLURM script to compile the program on an HPC cluster.                  |
+| `together.job`    | SLURM script to run the program on an HPC cluster.                      |
 
 ---
 
 ## Building and Running
-To build and run the program, run the shell script `run.sh`. 
-
-
+To build and run the program, execute the shell script `run.sh`. 
 
