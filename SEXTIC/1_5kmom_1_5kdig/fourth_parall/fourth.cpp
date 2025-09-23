@@ -93,7 +93,7 @@ namespace math = boost::math;
 
 int i,j,k,m,n,l;
 int betas = 35; // number of omegas to test
-int num_terms = 4100;
+int num_terms = 1700;
 const int s = 150, b = 9; // l*(b+1)  = d+1
 const int d = s*(b+1) - 1;
 const realtype Pi = boost::math::constants::pi<realtype>();
@@ -159,7 +159,7 @@ int main()
 
     std::string st1;
     std::ifstream infile;
-    infile.open( "/scratch3/chris.tica/SEXTIC/1_5k_mom_1_5kdig/Constants/Constant.txt" );
+    infile.open( "../Constants/Constant.txt" );
 
     for (i=0; i < constants.size(); ++i)
     {
@@ -222,7 +222,7 @@ int main()
         }
 
         std::ofstream outfile1;
-        outfile1.open("/scratch3/chris.tica/SEXTIC/1_5k_mom_1_5kdig/results/FOURTH.txt",std::ios_base::out);
+        outfile1.open("../results/FOURTH.txt",std::ios_base::out);
         outfile1.precision(digits);
 
         for (i = 0; i < betas ; ++i )
