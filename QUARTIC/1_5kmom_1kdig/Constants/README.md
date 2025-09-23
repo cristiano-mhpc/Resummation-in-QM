@@ -4,13 +4,9 @@
 
 The C++ file **`LU.cpp`** solves the system of $d+1$ linear equations  
 for the first $d+1$ expansion coefficients $c_m$:
-
 ```math
-\mu_n =
-\sum_{m=0}^{d} c_m\, P(n,m)
-\tag{1}
+\mu_n =\sum_{m=0}^{d} c_m\, P(n,m)
 ``` 
-
 where the matrix \(P(n,m)\) is defined as
 
 $$
