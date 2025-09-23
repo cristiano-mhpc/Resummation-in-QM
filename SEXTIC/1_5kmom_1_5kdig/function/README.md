@@ -4,7 +4,7 @@
 
 The C++ program **`function.cpp`** computes the **third term on the right-hand side** of equation (3.50):
 
-$$E^{(3)}(\beta) = 1 + \sum_{k=0}^{\infty} (-1)^k \beta^k \mu^{-(2k+2)} + \Delta(\beta),$$
+$$E^{(3)}(\beta) = 1 + \sum_{k=0}^{\infty} \frac{(-1)^k \beta^k}{ \mu^{-(2k+2)} }+ \Delta(\beta),$$
 
 where the correction term $\Delta(\beta)$ is
 
