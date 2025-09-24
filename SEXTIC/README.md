@@ -2,7 +2,7 @@
 
 ## What this code is about
 
-The C++ program **`result.cpp`** computes the ground-state energy $E^{(3)}_0(\beta)$ of the **sextic anharmonic oscillator**:
+The C++ program computes the ground-state energy $E^{(3)}_0(\beta)$ of the **sextic anharmonic oscillator**:
 
 $$E^{(3)}(\beta)= 1 + \sum_{k=0}^{\infty} (-1)^k \beta^k \mu^{-(2k+2)} + \Delta(\beta)$$
 
