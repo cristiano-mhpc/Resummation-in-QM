@@ -8,7 +8,7 @@ $$\sum_{k=0}^{\infty} (-1)^k \mu^{-(k+1)} \beta^k=\sum_{k=0}^{d} (-1)^k \beta^k 
 
 where
 
-$$D_k =\sum_{m=0}^{d} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m - l)!}\int_{0}^{\infty} e^{-x/2} x^{k+\nu+1-l} dx,$$
+$$D_k =\sum_{m=0}^{d} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m - l)!}\mathrm{FP}\int_{0}^{\infty}\frac{ e^{-x/2}}{ x^{k+\nu+1-l} }dx,$$
 
 and
 
