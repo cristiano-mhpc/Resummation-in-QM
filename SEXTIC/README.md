@@ -36,14 +36,7 @@ $$\Delta(\beta)= \frac{\pi \beta^{(1+\nu)/2}}{\sin(\pi\nu)}\Bigl[\cos\left(\frac
 
 where
 
-$$
-g(x)
-= e^{-x/2}
-  \sum_{m=0}^{\infty} c_m m!
-  \sum_{k=0}^{m}
-    \frac{(-x)^k}{(k!)^2 (m-k)!}.
-\tag{9}
-$$
+$$g(x)= e^{-x/2}\sum_{m=0}^{\infty} c_m m!\sum_{k=0}^{m}\frac{(-x)^k}{(k!)^2 (m-k)!}.$$
 
 ---
 
