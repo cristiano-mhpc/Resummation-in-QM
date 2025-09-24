@@ -24,7 +24,7 @@ $$D_k =\sum_{m=0}^{d} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m-l)!}\mathrm{FP
 
 and the finite–part integral is
 
-$$\mathrm{FP}\int_{0}^{\infty} \frac{e^{-x/2}}{ x^{k+\nu+1-l}}dx= (-1)^{k-l+1}\left(\frac12\right)^{k-l+1+\nu}\pi\Gamma(k-l+1+\nu)\sin(\pi\nu).$$
+$$\mathrm{FP}\int_{0}^{\infty} \frac{e^{-x/2}}{ x^{k+\nu+1-l}}dx= \frac{(-1)^{k-l+1}\left(\frac12\right)^{k-l+1+\nu}\pi}{\Gamma(k-l+1+\nu)\sin(\pi\nu)}.$$
 
 Here $\nu = -\tfrac{1}{2}$.
 
