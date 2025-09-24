@@ -8,7 +8,7 @@ $$E^{(3)}(\beta)= 1 + \sum_{k=0}^{\infty} (-1)^k \beta^k \mu^{-(2k+2)} + \Delta(
 
 ---
 
-### Second term of equation (1)
+Second term in the equation above is given by 
 
 $$\sum_{k=0}^{\infty} (-1)^k \mu^{-(2k+2)} \beta^k=\sum_{k=0}^{\lfloor d/2 \rfloor -1} (-1)^k \beta^k \bigl(A_{2k}+B_{2k}+C_{2k}\bigr)+\sum_{k=\lfloor d/2 \rfloor}^{\infty} (-1)^k \beta^k D_{2k}.$$
 
