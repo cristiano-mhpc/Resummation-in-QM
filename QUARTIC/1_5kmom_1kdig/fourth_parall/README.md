@@ -12,7 +12,7 @@ $$D_k =\sum_{m=0}^{d} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m - l)!}\int_{0}
 
 and
 
-$$\int_{0}^{\infty} e^{-x/2} x^{k+\nu+1-l}\, dx=(-1)^{k-l+1}\left(\frac{1}{2}\right)^{k-l+1+\nu}\pi \Gamma(k - l + 1 + \nu)\sin(\pi \nu).$$
+$$\mathrm{FP}\int_{0}^{\infty} \frac{e^{-x/2}}{ x^{k+\nu+1-l}} dx=\frac{(-1)^{k-l+1}\left(\frac{1}{2}\right)^{k-l+1+\nu}\pi}{ \Gamma(k - l + 1 + \nu)\sin(\pi \nu)}.$$
 
 The program reads the $d + 1$ coefficients $c_m$ from **`Constants.txt`**,and outputs the computed values of the fourth-term series to **`FOURTH.txt`**  for a range of $\beta$ values.In practice, the term (1) is typically computed up to $k = 2d$.
 
