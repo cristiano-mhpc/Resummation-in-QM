@@ -40,3 +40,29 @@ $$g(x)= e^{-x/2}\sum_{m=0}^{\infty} c_m m!\sum_{k=0}^{m}\frac{(-x)^k}{(k!)^2 (m-
 
 ---
 
+## Inputs and Outputs
+
+* The partial sums in equation (2) for various $\beta$ values are read from  
+  **`FIRST.txt`**, **`SECOND.txt`**, **`THIRD.txt`**, **`FOURTH.txt`**.
+* The third term in equation (1) is read from **`FIFTH.txt`**.
+* The final computed ground-state energy $E_0(\beta)$ is written to **`disectres.txt`**.
+
+---
+
+## Repository Layout
+
+| File / Folder     | Purpose                                                                 |
+|-------------------|-------------------------------------------------------------------------|
+| `result.cpp`      | Main C++ source computing $E_0(\beta)$.                                |
+| `FIRST.txt` … `FIFTH.txt` | Input files containing the different term expansions.            |
+| `disectres.txt`   | Output file with computed ground-state energies.                         |
+| `CMakeLists.txt`  | Modern CMake build configuration (MPI + Boost + MPFR + GMP).            |
+| `compile.job`     | SLURM job script to compile the program on an HPC cluster.              |
+| `together.job`    | SLURM job script to run the program on an HPC cluster.                  |
+| `run.sh`         | Legacy shell script to build and run locally on Ubuntu 22.04.           |
+
+---
+
+## Building and Running
+
+Run the executable `run.sh` to compile and execute the program.  
