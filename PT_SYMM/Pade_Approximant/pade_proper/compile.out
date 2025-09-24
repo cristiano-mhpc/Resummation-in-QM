@@ -1,5 +1,0 @@
-SLURM_JOBID=344882
-SLURM_JOB_NODELIST=saliksik-cpu-20
-SLURM_NNODES=1
-SLURMTMPDIR=
-working directory = /scratch3/chris.tica/PTSYM/Pade/pade_proper

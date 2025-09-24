@@ -1,5 +1,0 @@
-SLURM_JOBID=344901
-SLURM_JOB_NODELIST=saliksik-cpu-01
-SLURM_NNODES=1
-SLURMTMPDIR=
-working directory = /scratch3/chris.tica/PTSYM/Pade/Constants
