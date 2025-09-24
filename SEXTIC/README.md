@@ -32,7 +32,7 @@ Here $\nu = -\tfrac{1}{2}$.
 
 ### Third term of equation (1)
 
-$$\Delta(\beta)= \frac{\pi \beta^{(1+\nu)/2}}{\sin(\pi\nu)}\Bigl[\cos\!\left(\frac{\pi\nu}{2}\right)\operatorname{Im} g\!\left(\frac{i}{\sqrt{\beta}}\right)+ \sin\!\left(\frac{\pi\nu}{2}\right)\operatorname{Re} g\!\left(\frac{i}{\sqrt{\beta}}\right)\Bigr],$$
+$$\Delta(\beta)= \frac{\pi \beta^{(1+\nu)/2}}{\sin(\pi\nu)}\Bigl[\cos\left(\frac{\pi\nu}{2}\right)\mathrm{Im} g\left(\frac{i}{\sqrt{\beta}}\right)+ \sin\left(\frac{\pi\nu}{2}\right)\mathrm{Re} g\left(\frac{i}{\sqrt{\beta}}\right)\Bigr],$$
 
 where
 
