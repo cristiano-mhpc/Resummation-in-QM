@@ -14,17 +14,17 @@ $$\sum_{k=0}^{\infty} (-1)^k \mu^{-(2k+2)} \beta^k=\sum_{k=0}^{\lfloor d/2 \rflo
 
 where
 
-$$A_k =\sum_{m=0}^{k} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m-l)!}\int_{0}^{\infty} e^{-x/2} x^{k+\nu+1-l}dx,$$
+$$A_k =\sum_{m=0}^{k} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m-l)!}\mathrm{FP}\int_{0}^{\infty} \frac{e^{-x/2}}{ x^{k+\nu+1-l}}dx,$$
 
-$$B_k =\sum_{m=k+1}^{d} c_m m!\sum_{l=0}^{k}\frac{(-1)^l}{(l!)^2 (m-l)!}\int_{0}^{\infty} e^{-x/2} x^{k+\nu+1-l}dx,$$
+$$B_k =\sum_{m=k+1}^{d} c_m m!\sum_{l=0}^{k}\frac{(-1)^l}{(l!)^2 (m-l)!}\mathrm{FP}\int_{0}^{\infty} \frac{e^{-x/2} }{x^{k+\nu+1-l}}dx,$$
 
 $$C_k =\sum_{m=k+1}^{d} c_m m!\sum_{l=k+1}^{m}\frac{(-1)^l \Gamma(l-k-\nu) 2^{l-k-\nu}}{(l!)^2 (m-l)!},$$
 
-$$D_k =\sum_{m=0}^{d} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m-l)!}\int_{0}^{\infty} e^{-x/2} x^{k+\nu+1-l}dx.$$
+$$D_k =\sum_{m=0}^{d} c_m m!\sum_{l=0}^{m}\frac{(-1)^l}{(l!)^2 (m-l)!}\mathrm{FP}\int_{0}^{\infty} \frac{e^{-x/2}}{ x^{k+\nu+1-l}}dx.$$
 
 and the finite–part integral is
 
-$$\int_{0}^{\infty} e^{-x/2} x^{k+\nu+1-l}dx= (-1)^{k-l+1}\left(\frac12\right)^{k-l+1+\nu}\pi\Gamma(k-l+1+\nu)\sin(\pi\nu).$$
+$$\mathrm{FP}\int_{0}^{\infty} \frac{e^{-x/2}}{ x^{k+\nu+1-l}}dx= (-1)^{k-l+1}\left(\frac12\right)^{k-l+1+\nu}\pi\Gamma(k-l+1+\nu)\sin(\pi\nu).$$
 
 Here $\nu = -\tfrac{1}{2}$.
 
